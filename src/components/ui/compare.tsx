@@ -18,8 +18,8 @@ interface CompareProps {
   autoplayDuration?: number;
 }
 export const Compare = ({
-  firstImage = "",
-  secondImage = "",
+  firstImage = "/imageIOT.jpeg",
+  secondImage = "/imageCE.jpeg",
   className,
   firstImageClassName,
   secondImageClassname,
@@ -150,7 +150,7 @@ export const Compare = ({
   return (
     <div
       ref={sliderRef}
-      className={cn("w-[400px] h-[400px] overflow-hidden", className)}
+      className={cn("w-100 h-[500px] overflow-hidden", className)}
       style={{
         position: "relative",
         cursor: slideMode === "drag" ? "grab" : "col-resize",
